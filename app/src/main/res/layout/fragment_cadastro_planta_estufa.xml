@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroPlantaEstufaFragment">
+
+    <Button
+        android:id="@+id/btnVoltar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/btnVoltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomePlantaEstufa"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/etNomePlanta"
+        app:layout_constraintBottom_toTopOf="@+id/spPreferenciaLuzEstufa"
+        app:layout_constraintEnd_toEndOf="@+id/spPreferenciaLuzEstufa"
+        app:layout_constraintTop_toBottomOf="@+id/tvnome3" />
+
+    <TextView
+        android:id="@+id/tvra3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/ra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spPreferenciaLuzEstufa"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="86dp"
+        app:layout_constraintBottom_toTopOf="@+id/spsensibilidadePragasEstufa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvra3" />
+
+    <EditText
+        android:id="@+id/etFrequenciaRegaEstufa"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="@string/etFrequenciaRega"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/spsensibilidadePragasEstufa"
+        app:layout_constraintEnd_toEndOf="@+id/spPreferenciaLuzEstufa"
+        app:layout_constraintTop_toBottomOf="@+id/spPreferenciaLuzEstufa" />
+
+    <Spinner
+        android:id="@+id/spsensibilidadePragasEstufa"
+        android:layout_width="192dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/etTemperaturaIdeal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spResistAlteracoesAmbientais"
+        android:layout_width="204dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etHumidadeIdeal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etTemperaturaIdeal" />
+
+    <EditText
+        android:id="@+id/etNotasPlantaEstufa"
+        android:layout_width="0dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:scrollbars="vertical"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCadastrarPlantaEstufa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etHumidadeIdeal" />
+
+    <TextView
+        android:id="@+id/tvnome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCadastrarPlantaEstufa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="@string/btnCadastrarPlanta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etTemperaturaIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/etTemperaturaIdeal"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etHumidadeIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginBottom="136dp"
+        android:ems="10"
+        android:hint="@string/etHumidadeIdeal"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarPlantaEstufa"
+        app:layout_constraintStart_toStartOf="@+id/spResistAlteracoesAmbientais"
+        app:layout_constraintTop_toTopOf="@+id/etTemperaturaIdeal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

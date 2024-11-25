@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroPlantaInternaFragment">
+
+    <Button
+        android:id="@+id/btnCadastrarPlantaInterna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp"
+        android:text="@string/btnCadastrarPlanta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/ra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomePlantaInterna"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/etNomePlanta"
+        app:layout_constraintBottom_toTopOf="@+id/spPreferenciaLuzInterna"
+        app:layout_constraintStart_toStartOf="@+id/spPreferenciaLuzInterna"
+        app:layout_constraintTop_toBottomOf="@+id/tvnome" />
+
+    <Spinner
+        android:id="@+id/spPreferenciaLuzInterna"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etFrequenciaRegaInterna"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="84dp"
+        android:ems="10"
+        android:hint="@string/etFrequenciaRega"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/spsensibilidadePragasInterna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spPreferenciaLuzInterna" />
+
+    <Spinner
+        android:id="@+id/spsensibilidadePragasInterna"
+        android:layout_width="204dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/etTamanhoVaso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etNotasPlantaInterna"
+        android:layout_width="0dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="83dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:scrollbars="vertical"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCadastrarPlantaInterna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etTempoLuz" />
+
+    <EditText
+        android:id="@+id/etTamanhoVaso"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/etTamanhoVaso"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTempoLuz"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/etTempoLuz"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etTamanhoVaso"
+        app:layout_constraintTop_toBottomOf="@+id/etTamanhoVaso" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="54dp"
+        android:text="@string/btnVoltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

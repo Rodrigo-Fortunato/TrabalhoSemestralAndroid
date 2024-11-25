@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/CadastroPlantaInterna"
+        android:title="@string/itemCadastrarPlantaInterna" />
+    <item
+        android:id="@+id/CadastroPlantaExterna"
+        android:title="@string/itemCadastrarPlantaExterna" />
+    <item
+        android:id="@+id/CadastroPlantaEstufa"
+        android:title="@string/itemCadastrarPlantaEstufa" />
+</menu>

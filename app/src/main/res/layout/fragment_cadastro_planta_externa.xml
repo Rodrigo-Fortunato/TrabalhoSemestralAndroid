@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroPlantaExternaFragment">
+
+    <Button
+        android:id="@+id/btnVoltar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/btnVoltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spsensibilidadePragasExterna"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="267dp"
+        app:layout_constraintEnd_toEndOf="@+id/etFrequenciaRegaExterna"
+        app:layout_constraintStart_toStartOf="@+id/spToleranciaVento"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spToleranciaVento"
+        android:layout_width="204dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginBottom="89dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spResistenciaChuva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spsensibilidadePragasExterna" />
+
+    <EditText
+        android:id="@+id/etNotasPlantaExterna"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:scrollbars="vertical"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarPlantaExterna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spResistenciaChuva" />
+
+    <Button
+        android:id="@+id/btnCadastrarPlantaExterna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="@string/btnCadastrarPlanta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spResistenciaChuva"
+        android:layout_width="204dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="227dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etFrequenciaRegaExterna"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="83dp"
+        android:ems="10"
+        android:hint="@string/etFrequenciaRega"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/spsensibilidadePragasExterna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spPreferenciaLuzExterna" />
+
+    <Spinner
+        android:id="@+id/spPreferenciaLuzExterna"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="85dp"
+        app:layout_constraintBottom_toTopOf="@+id/spsensibilidadePragasExterna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvnome2" />
+
+    <TextView
+        android:id="@+id/tvnome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/ra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomePlantaExterna"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/etNomePlanta"
+        app:layout_constraintBottom_toTopOf="@+id/spPreferenciaLuzExterna"
+        app:layout_constraintStart_toStartOf="@+id/spPreferenciaLuzExterna"
+        app:layout_constraintTop_toBottomOf="@+id/tvnome2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

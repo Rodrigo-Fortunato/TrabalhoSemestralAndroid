@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TrabalhoSemestralAndroid</string>
+    <string name="nome">Rodrigo Fortunato Martins Neves</string>
+    <string name="ra">1110482313035</string>
+    <string name="itemCadastrarPlantaInterna">Cadastrar Planta Interna</string>
+    <string name="itemCadastrarPlantaExterna">Cadastrar Planta Externa</string>
+    <string name="itemCadastrarPlantaEstufa">Cadastrar Planta Estufa</string>
+
+
+    <string name="etNomePlanta">Nome</string>
+    <string name="etFrequenciaRega">Frequencia de Rega(Dias)</string>
+    <string name="etTamanhoVaso">Tamanho do Vaso (CM)</string>
+    <string name="etTempoLuz">Tempo de Luz(horas)</string>
+    <string name="etTemperaturaIdeal">Temperatura Ideal</string>
+    <string name="etHumidadeIdeal">Humidade Ideal(%)</string>
+    <string name="btnCadastrarPlanta">Cadastrar</string>
+    <string name="btnEditar">Editar</string>
+    <string name="btnExcluir">Excluir</string>
+    <string name="btnVoltar">Voltar</string>
+    <string name="tvNomePlanta">Nome da Planta</string>
+    <string name="tvPreferenciaLuz">Preferencia de luz</string>
+    <string name="tvFrequenciaRega">Frequencia de Rega</string>
+    <string name="tvSensibilidadePragas">Sensibilidade a Pragas</string>
+    <string name="tvNotasPlanta">Notas</string>
+    <string name="tvTemperaturaIdeal">Temperatura Ideal</string>
+    <string name="tvHumidadeIdeal">Humidade Ideal</string>
+    <string name="tvResistenciaAlteracoesAmbientais">Resistencia Ambiental</string>
+    <string name="tvToleranciaVento">Tolerancia ao Vento</string>
+    <string name="tvTamanhoVaso">Tamanho do Vaso</string>
+    <string name="tvTempoLuz">Tempo de Luz</string>
+
+
+
+
+</resources>

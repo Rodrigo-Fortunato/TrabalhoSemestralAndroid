@@ -18,6 +18,7 @@
     <string name="btnExcluir">Excluir</string>
     <string name="btnVoltar">Voltar</string>
     <string name="tvNomePlanta">Nome da Planta</string>
+
     <string name="tvPreferenciaLuz">Preferencia de luz</string>
     <string name="tvFrequenciaRega">Frequencia de Rega</string>
     <string name="tvSensibilidadePragas">Sensibilidade a Pragas</string>
@@ -26,6 +27,7 @@
     <string name="tvHumidadeIdeal">Humidade Ideal</string>
     <string name="tvResistenciaAlteracoesAmbientais">Resistencia Ambiental</string>
     <string name="tvToleranciaVento">Tolerancia ao Vento</string>
+    <string name="tvResistenciaChuva">Resistencia a Chuva</string>
     <string name="tvTamanhoVaso">Tamanho do Vaso</string>
     <string name="tvTempoLuz">Tempo de Luz</string>
 

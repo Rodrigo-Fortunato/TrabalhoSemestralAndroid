@@ -24,6 +24,8 @@ import br.edu.fateczl.trabalhosemestralandroid.controller.PlantaEstufaController
 import br.edu.fateczl.trabalhosemestralandroid.controller.PlantaExternaController;
 import br.edu.fateczl.trabalhosemestralandroid.controller.PlantaInternaController;
 import br.edu.fateczl.trabalhosemestralandroid.model.Planta;
+import br.edu.fateczl.trabalhosemestralandroid.model.PlantaEstufa;
+import br.edu.fateczl.trabalhosemestralandroid.model.PlantaExterna;
 import br.edu.fateczl.trabalhosemestralandroid.model.PlantaInterna;
 import br.edu.fateczl.trabalhosemestralandroid.persistence.PlantaEstufaDAO;
 import br.edu.fateczl.trabalhosemestralandroid.persistence.PlantaExternaDAO;
@@ -56,10 +58,6 @@ public class InicioFragment extends Fragment implements IClickListener<Planta> {
 
           plantas =ListarPlantas();
 
-
-
-
-       
 
         plantaAdapter = new PlantaAdapter(this,view.getContext(), plantas);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(view.getContext(),LinearLayoutManager.VERTICAL,false);
@@ -94,9 +92,28 @@ public class InicioFragment extends Fragment implements IClickListener<Planta> {
 
     @Override
     public void onClick(Planta planta) {
+        Bundle bundle = new Bundle();
+        if (planta instanceof PlantaInterna){
+            bundle.putString("tipo","PlantaInterna");
+            Log.i("tipo","PlantaInterna");
+            bundle.putString("id", String.valueOf(planta.getId()));
+        }
+        if (planta instanceof PlantaExterna){
+            bundle.putString("tipo","PlantaExterna");
+            Log.i("tipo","PlantaExterna");
+            bundle.putString("id", String.valueOf(planta.getId()));
+        }
+        if (planta instanceof PlantaEstufa){
+            bundle.putString("tipo","PlantaEstufa");
+            Log.i("tipo","PlantaEstufa");
+            bundle.putString("id", String.valueOf(planta.getId()));
+        }
+
+
+        bundle.putString("id", String.valueOf(planta.getId()));
         FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.fragment, new HistoricoPlantaFragment());
+        transaction.replace(R.id.fragment, new HistoricoPlantaFragment(bundle));
         transaction.addToBackStack(null);
         transaction.commit();
     }
